@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dPu-vZ-yEL">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_GISInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNk-FE-6LX">
+                                <rect key="frame" x="128.5" y="269" width="63" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="2GIS Info"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SNk-FE-6LX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="01o-e6-3CE"/>
+                            <constraint firstItem="SNk-FE-6LX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ED3-W3-yGo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="oRN-wC-IHK"/>
+                    <connections>
+                        <segue destination="cYC-dg-qK3" kind="presentation" id="5ok-FA-riS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="135"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="Qdq-kB-cq8">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="cYC-dg-qK3" customClass="MenuViewController" customModule="_GISInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Is-Pc-Gdg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="ZS7-eq-bHm">
+                                <rect key="frame" x="118.5" y="184" width="83" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnc-MT-ZNM">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="NEW 🌚"/>
+                                        <connections>
+                                            <segue destination="HFY-gr-bwK" kind="presentation" id="Jme-dz-bo5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d07-ps-wyY">
+                                        <rect key="frame" x="0.0" y="81" width="83" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Quiz"/>
+                                        <connections>
+                                            <segue destination="dVi-tb-Rdc" kind="presentation" id="xFL-eE-MjA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3W-o6-px3">
+                                        <rect key="frame" x="0.0" y="161" width="83" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="FAQ"/>
+                                        <connections>
+                                            <segue destination="vGW-RH-rEH" kind="show" id="Plm-kn-FyX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9ko-B0-i4i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZS7-eq-bHm" firstAttribute="centerY" secondItem="6Is-Pc-Gdg" secondAttribute="centerY" id="a91-uj-Zic"/>
+                            <constraint firstItem="ZS7-eq-bHm" firstAttribute="centerX" secondItem="6Is-Pc-Gdg" secondAttribute="centerX" id="rlH-WJ-H2Q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X9r-2q-fln" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046" y="135"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="eVc-lu-Y7S">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="dVi-tb-Rdc" customClass="QuizViewController" customModule="_GISInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5HW-ik-lpf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="pTp-Q2-LME"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="Z3Y-6A-riD" kind="presentation" id="xO7-Yy-CCr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="buy-dP-YMY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1944" y="283"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="NhT-C5-zW3">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="vGW-RH-rEH" customClass="InfoViewController" customModule="_GISInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="LGt-SS-sNa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="7TU-He-BmL">
+                                <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7TU-He-BmL" id="lLK-KS-YXn">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vGW-RH-rEH" id="FJ4-1i-E8C"/>
+                            <outlet property="delegate" destination="vGW-RH-rEH" id="L95-cG-YH7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="i1S-ZU-RfL"/>
+                    <connections>
+                        <segue destination="3nf-gl-r2u" kind="presentation" id="U13-sY-bYa"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9c-0a-s0g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1879" y="1063"/>
+        </scene>
+        <!--Info Result View Controller-->
+        <scene sceneID="B5C-Ia-s9G">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="3nf-gl-r2u" customClass="InfoResultViewController" customModule="_GISInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bhb-DW-s77">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Xhe-Wg-m4G"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfp-Fd-3PZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2788" y="1063"/>
+        </scene>
+        <!--Quiz Result View Controller-->
+        <scene sceneID="6MR-XN-D6j">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Z3Y-6A-riD" customClass="QuizResultViewController" customModule="_GISInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aIl-pF-QYr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="95" translatesAutoresizingMaskIntoConstraints="NO" id="GiD-pq-4Ot">
+                                <rect key="frame" x="128" y="207" width="64" height="154.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBR-rC-Ol1">
+                                        <rect key="frame" x="0.0" y="0.0" width="64" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5L-jj-VAB">
+                                        <rect key="frame" x="0.0" y="115.5" width="64" height="39"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7CZ-kP-Au8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GiD-pq-4Ot" firstAttribute="centerY" secondItem="aIl-pF-QYr" secondAttribute="centerY" id="V26-IW-4e5"/>
+                            <constraint firstItem="GiD-pq-4Ot" firstAttribute="centerX" secondItem="aIl-pF-QYr" secondAttribute="centerX" id="ZsW-sV-3zf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gy9-lf-byV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2789" y="276"/>
+        </scene>
+        <!--Hybrid View Controller-->
+        <scene sceneID="EcR-V4-hHr">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="HFY-gr-bwK" customClass="HybridViewController" customModule="_GISInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5VD-pe-DqE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="107" translatesAutoresizingMaskIntoConstraints="NO" id="cm2-pK-oLj">
+                                <rect key="frame" x="68.5" y="200" width="183" height="168.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1i-JB-Ewn">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXg-Qo-9Ew">
+                                        <rect key="frame" x="0.0" y="127.5" width="183" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Install Hybrid App"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="f5K-HX-rxf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cm2-pK-oLj" firstAttribute="centerX" secondItem="5VD-pe-DqE" secondAttribute="centerX" id="8r4-tk-Lf7"/>
+                            <constraint firstItem="cm2-pK-oLj" firstAttribute="centerY" secondItem="5VD-pe-DqE" secondAttribute="centerY" id="a6X-kf-dPT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="WXS-9a-H8P" kind="presentation" id="BTK-9Z-Y1x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Knr-Ui-187" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1932" y="-425"/>
+        </scene>
+        <!--Hybrid Info View Controller-->
+        <scene sceneID="N0M-Nt-vgY">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="WXS-9a-H8P" customClass="HybridInfoViewController" customModule="_GISInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n4z-rs-DAQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="178" translatesAutoresizingMaskIntoConstraints="NO" id="qwa-af-Siv">
+                                <rect key="frame" x="40" y="100" width="240" height="368"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CVD-HE-1SO">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3I-jW-MHV">
+                                        <rect key="frame" x="86.5" y="306" width="67" height="62"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jil-7E-2Ho"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qwa-af-Siv" firstAttribute="top" secondItem="Jil-7E-2Ho" secondAttribute="top" constant="100" id="IgU-CE-AHH"/>
+                            <constraint firstItem="Jil-7E-2Ho" firstAttribute="trailing" secondItem="qwa-af-Siv" secondAttribute="trailing" constant="40" id="QoC-HJ-Mv7"/>
+                            <constraint firstItem="qwa-af-Siv" firstAttribute="centerY" secondItem="Jil-7E-2Ho" secondAttribute="centerY" id="cjQ-CO-dbp"/>
+                            <constraint firstItem="qwa-af-Siv" firstAttribute="leading" secondItem="Jil-7E-2Ho" secondAttribute="leading" constant="40" id="f4d-Zb-0Xt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qlP-TO-Cr1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2809" y="-425"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SRY-Ge-cuP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dPu-vZ-yEL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rjg-uy-Dsd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="z0J-mk-k5M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g9s-te-ePh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-728" y="135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

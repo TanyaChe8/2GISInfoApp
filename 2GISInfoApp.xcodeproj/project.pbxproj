@@ -13,6 +13,13 @@
 		5FEBC27727F0B90500481958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FEBC27527F0B90500481958 /* Main.storyboard */; };
 		5FEBC27927F0B90800481958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FEBC27827F0B90800481958 /* Assets.xcassets */; };
 		5FEBC27C27F0B90800481958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FEBC27A27F0B90800481958 /* LaunchScreen.storyboard */; };
+		5FEBC28A27F0BD4A00481958 /* HybridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEBC28927F0BD4A00481958 /* HybridViewController.swift */; };
+		5FEBC28C27F0BD7C00481958 /* HybridInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEBC28B27F0BD7C00481958 /* HybridInfoViewController.swift */; };
+		5FEBC28E27F0BDBF00481958 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEBC28D27F0BDBF00481958 /* QuizViewController.swift */; };
+		5FEBC29027F0BDF500481958 /* QuizResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEBC28F27F0BDF500481958 /* QuizResultViewController.swift */; };
+		5FEBC29227F0BE6F00481958 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEBC29127F0BE6F00481958 /* InfoViewController.swift */; };
+		5FEBC29427F0BEC800481958 /* InfoResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEBC29327F0BEC800481958 /* InfoResultViewController.swift */; };
+		5FEBC29627F0BFD600481958 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEBC29527F0BFD600481958 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		5FEBC27827F0B90800481958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FEBC27B27F0B90800481958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FEBC27D27F0B90800481958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FEBC28927F0BD4A00481958 /* HybridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridViewController.swift; sourceTree = "<group>"; };
+		5FEBC28B27F0BD7C00481958 /* HybridInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HybridInfoViewController.swift; sourceTree = "<group>"; };
+		5FEBC28D27F0BDBF00481958 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		5FEBC28F27F0BDF500481958 /* QuizResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResultViewController.swift; sourceTree = "<group>"; };
+		5FEBC29127F0BE6F00481958 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		5FEBC29327F0BEC800481958 /* InfoResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoResultViewController.swift; sourceTree = "<group>"; };
+		5FEBC29527F0BFD600481958 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,70 @@
 		5FEBC26E27F0B90500481958 /* 2GISInfoApp */ = {
 			isa = PBXGroup;
 			children = (
-				5FEBC26F27F0B90500481958 /* AppDelegate.swift */,
-				5FEBC27127F0B90500481958 /* SceneDelegate.swift */,
-				5FEBC27327F0B90500481958 /* ViewController.swift */,
-				5FEBC27527F0B90500481958 /* Main.storyboard */,
-				5FEBC27827F0B90800481958 /* Assets.xcassets */,
-				5FEBC27A27F0B90800481958 /* LaunchScreen.storyboard */,
-				5FEBC27D27F0B90800481958 /* Info.plist */,
+				5FEBC28327F0B93100481958 /* ViewControllers */,
+				5FEBC28527F0B93800481958 /* Storyboards */,
+				5FEBC28427F0B93500481958 /* Models */,
+				5FEBC28827F0B99400481958 /* Services */,
+				5FEBC28727F0B97E00481958 /* Resources */,
+				5FEBC28627F0B93A00481958 /* App */,
 			);
 			path = 2GISInfoApp;
+			sourceTree = "<group>";
+		};
+		5FEBC28327F0B93100481958 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FEBC27327F0B90500481958 /* ViewController.swift */,
+				5FEBC29527F0BFD600481958 /* MenuViewController.swift */,
+				5FEBC28927F0BD4A00481958 /* HybridViewController.swift */,
+				5FEBC28B27F0BD7C00481958 /* HybridInfoViewController.swift */,
+				5FEBC28D27F0BDBF00481958 /* QuizViewController.swift */,
+				5FEBC28F27F0BDF500481958 /* QuizResultViewController.swift */,
+				5FEBC29127F0BE6F00481958 /* InfoViewController.swift */,
+				5FEBC29327F0BEC800481958 /* InfoResultViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5FEBC28427F0B93500481958 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5FEBC28527F0B93800481958 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5FEBC27A27F0B90800481958 /* LaunchScreen.storyboard */,
+				5FEBC27527F0B90500481958 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5FEBC28627F0B93A00481958 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5FEBC27127F0B90500481958 /* SceneDelegate.swift */,
+				5FEBC26F27F0B90500481958 /* AppDelegate.swift */,
+				5FEBC27D27F0B90800481958 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5FEBC28727F0B97E00481958 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5FEBC27827F0B90800481958 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5FEBC28827F0B99400481958 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +207,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FEBC28C27F0BD7C00481958 /* HybridInfoViewController.swift in Sources */,
+				5FEBC29627F0BFD600481958 /* MenuViewController.swift in Sources */,
 				5FEBC27427F0B90500481958 /* ViewController.swift in Sources */,
 				5FEBC27027F0B90500481958 /* AppDelegate.swift in Sources */,
+				5FEBC28E27F0BDBF00481958 /* QuizViewController.swift in Sources */,
+				5FEBC28A27F0BD4A00481958 /* HybridViewController.swift in Sources */,
+				5FEBC29427F0BEC800481958 /* InfoResultViewController.swift in Sources */,
 				5FEBC27227F0B90500481958 /* SceneDelegate.swift in Sources */,
+				5FEBC29227F0BE6F00481958 /* InfoViewController.swift in Sources */,
+				5FEBC29027F0BDF500481958 /* QuizResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +367,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NUYZ3467VF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 2GISInfoApp/Info.plist;
+				INFOPLIST_FILE = 2GISInfoApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +395,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NUYZ3467VF;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = 2GISInfoApp/Info.plist;
+				INFOPLIST_FILE = 2GISInfoApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
