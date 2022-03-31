@@ -22,7 +22,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="2GIS Info"/>
                                 <connections>
-                                    <action selector="firstPressedButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="qS9-2s-7uZ"/>
+                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="qS9-2s-7uZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -59,7 +59,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="NEW 🌚"/>
                                         <connections>
-                                            <action selector="newInfoPressedButton" destination="cYC-dg-qK3" eventType="touchUpInside" id="k9q-ic-2Bd"/>
+                                            <action selector="newInfoButtonPressed" destination="cYC-dg-qK3" eventType="touchUpInside" id="k9q-ic-2Bd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d07-ps-wyY">
@@ -68,7 +68,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Quiz"/>
                                         <connections>
-                                            <action selector="quizPressedButton" destination="cYC-dg-qK3" eventType="touchUpInside" id="6tU-ld-5SP"/>
+                                            <action selector="quizButtonPressed" destination="cYC-dg-qK3" eventType="touchUpInside" id="6tU-ld-5SP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3W-o6-px3">
@@ -77,7 +77,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="FAQ"/>
                                         <connections>
-                                            <action selector="faqPressedButton" destination="cYC-dg-qK3" eventType="touchUpInside" id="c2q-S5-h22"/>
+                                            <action selector="faqButtonPressed" destination="cYC-dg-qK3" eventType="touchUpInside" id="c2q-S5-h22"/>
                                             <segue destination="vGW-RH-rEH" kind="presentation" identifier="TransitionFAQ" id="Bhm-br-DYe"/>
                                         </connections>
                                     </button>
@@ -252,7 +252,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Hybrid" id="kC9-58-6vw"/>
                     <connections>
-                        <segue destination="WXS-9a-H8P" kind="show" identifier="lastVC" id="djq-Wf-jYK"/>
+                        <segue destination="WXS-9a-H8P" kind="show" identifier="TransitionHybridInfo" id="djq-Wf-jYK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Knr-Ui-187" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

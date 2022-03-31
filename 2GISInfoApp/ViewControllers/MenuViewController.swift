@@ -9,22 +9,15 @@ import UIKit
 
 class MenuViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-    }
-    
-
-    @IBAction func newInfoPressedButton() {
+    @IBAction func newInfoButtonPressed() {
         performSegue(withIdentifier: "TransitionHybrid", sender: nil)
     }
 
-    @IBAction func quizPressedButton() {
+    @IBAction func quizButtonPressed() {
         performSegue(withIdentifier: "TransitionQuiz", sender: nil)
     }
     
-    @IBAction func faqPressedButton() {
+    @IBAction func faqButtonPressed() {
         performSegue(withIdentifier: "TransitionFAQ", sender: nil)
     }
     

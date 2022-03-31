@@ -9,14 +9,8 @@ import UIKit
 
 class HybridViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
-    }
-    
     @IBAction func installButtonPressed() {
-        performSegue(withIdentifier: "lastVC", sender: nil)
+        performSegue(withIdentifier: "TransitionHybridInfo", sender: nil)
     }
     
     
