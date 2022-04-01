@@ -20,6 +20,9 @@
                                 <rect key="frame" x="128.5" y="269" width="63" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="2GIS Info"/>
+                                <connections>
+                                    <segue destination="cYC-dg-qK3" kind="presentation" id="Dze-Ha-TnF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -30,9 +33,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oRN-wC-IHK"/>
-                    <connections>
-                        <segue destination="cYC-dg-qK3" kind="presentation" id="5ok-FA-riS"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,7 +73,7 @@
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="FAQ"/>
                                         <connections>
-                                            <segue destination="vGW-RH-rEH" kind="show" id="Plm-kn-FyX"/>
+                                            <segue destination="xTm-Sy-LL3" kind="show" id="hVX-Lt-Z0Q"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -109,52 +109,90 @@
             </objects>
             <point key="canvasLocation" x="1944" y="283"/>
         </scene>
-        <!--Info View Controller-->
-        <scene sceneID="NhT-C5-zW3">
+        <!--FAQ-->
+        <scene sceneID="OfD-O6-yXQ">
             <objects>
-                <tableViewController modalPresentationStyle="fullScreen" id="vGW-RH-rEH" customClass="InfoViewController" customModule="_GISInfoApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="LGt-SS-sNa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <tableViewController modalPresentationStyle="fullScreen" id="6VR-hI-CE4" customClass="InfoViewController" customModule="_GISInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Er2-TR-2CH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.87880735359537132" green="1" blue="0.91034748327556225" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="7TU-He-BmL">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="infoCell" id="eDB-ry-mir">
                                 <rect key="frame" x="0.0" y="44.5" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7TU-He-BmL" id="lLK-KS-YXn">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eDB-ry-mir" id="i3i-kt-ZVz">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.87880735359999995" green="1" blue="0.91034748330000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <segue destination="05z-5p-VRt" kind="show" id="6qh-9d-DbT"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="vGW-RH-rEH" id="FJ4-1i-E8C"/>
-                            <outlet property="delegate" destination="vGW-RH-rEH" id="L95-cG-YH7"/>
+                            <outlet property="dataSource" destination="6VR-hI-CE4" id="wLN-ks-FKy"/>
+                            <outlet property="delegate" destination="6VR-hI-CE4" id="hO2-Ak-TqU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="i1S-ZU-RfL"/>
-                    <connections>
-                        <segue destination="3nf-gl-r2u" kind="presentation" id="U13-sY-bYa"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="FAQ" id="IVz-t3-8fj">
+                        <barButtonItem key="leftBarButtonItem" title="Назад" id="VAl-ZT-lQq">
+                            <connections>
+                                <action selector="backButtonPressed:" destination="6VR-hI-CE4" id="Hxq-r3-x4m"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h9c-0a-s0g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMy-Z8-gAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1879" y="1063"/>
+            <point key="canvasLocation" x="2861" y="1123"/>
         </scene>
-        <!--Info Result View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="l6m-u0-Jkx">
+            <objects>
+                <navigationController modalPresentationStyle="fullScreen" id="xTm-Sy-LL3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BpK-YZ-nbK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gK7-sC-vBG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6VR-hI-CE4" kind="relationship" relationship="rootViewController" id="Pw6-8a-Kn6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="30t-ns-pU9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1931" y="1089"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="B5C-Ia-s9G">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="3nf-gl-r2u" customClass="InfoResultViewController" customModule="_GISInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="3nf-gl-r2u" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bhb-DW-s77">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InfoImage" translatesAutoresizingMaskIntoConstraints="NO" id="BNU-hO-xzg">
+                                <rect key="frame" x="20" y="0.0" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Z1r-qo-2vp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Xhe-Wg-m4G"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xhe-Wg-m4G" firstAttribute="trailing" secondItem="BNU-hO-xzg" secondAttribute="trailing" constant="20" id="JYo-xg-3IE"/>
+                            <constraint firstItem="BNU-hO-xzg" firstAttribute="leading" secondItem="Xhe-Wg-m4G" secondAttribute="leading" constant="20" id="ilQ-J4-vzB"/>
+                            <constraint firstItem="BNU-hO-xzg" firstAttribute="top" secondItem="Xhe-Wg-m4G" secondAttribute="top" id="qV0-He-jIb"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="CuR-8R-s2r"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfp-Fd-3PZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2788" y="1063"/>
+            <point key="canvasLocation" x="3660" y="361"/>
         </scene>
         <!--Quiz Result View Controller-->
         <scene sceneID="6MR-XN-D6j">
@@ -289,8 +327,52 @@
             </objects>
             <point key="canvasLocation" x="-728" y="135"/>
         </scene>
+        <!--Info Result View Controller-->
+        <scene sceneID="dkk-b9-IMv">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="05z-5p-VRt" customClass="InfoResultViewController" customModule="_GISInfoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A0J-0A-7CT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Nt-HU-nzF">
+                                <rect key="frame" x="20" y="56" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="ckB-P6-xH1"/>
+                                    <constraint firstAttribute="height" constant="40" id="r48-be-BuW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1J-Ir-hAU">
+                                <rect key="frame" x="20" y="130" width="280" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6ny-Ni-FNd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6ny-Ni-FNd" firstAttribute="trailing" secondItem="4Nt-HU-nzF" secondAttribute="trailing" constant="20" id="6y6-fX-cPW"/>
+                            <constraint firstItem="i1J-Ir-hAU" firstAttribute="top" secondItem="4Nt-HU-nzF" secondAttribute="bottom" constant="34" id="EQd-tH-Cem"/>
+                            <constraint firstItem="4Nt-HU-nzF" firstAttribute="leading" secondItem="6ny-Ni-FNd" secondAttribute="leading" constant="20" id="b1L-Fd-7dF"/>
+                            <constraint firstItem="4Nt-HU-nzF" firstAttribute="top" secondItem="6ny-Ni-FNd" secondAttribute="top" id="rA0-zu-2pD"/>
+                            <constraint firstItem="i1J-Ir-hAU" firstAttribute="leading" secondItem="6ny-Ni-FNd" secondAttribute="leading" constant="20" id="xJS-AC-Csp"/>
+                            <constraint firstItem="6ny-Ni-FNd" firstAttribute="trailing" secondItem="i1J-Ir-hAU" secondAttribute="trailing" constant="20" id="zLq-IL-1MK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="f5S-cH-vQt"/>
+                    <connections>
+                        <outlet property="helpDescriptionLabel" destination="i1J-Ir-hAU" id="kZD-HJ-lpi"/>
+                        <outlet property="helpImageView" destination="4Nt-HU-nzF" id="jGV-Kx-uCA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WBv-y6-DiN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3907.5" y="1122.8873239436621"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="InfoImage" width="1066" height="150"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
