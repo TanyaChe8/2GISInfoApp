@@ -9,21 +9,28 @@ import UIKit
 
 class QuizResultViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	@IBOutlet weak var cityLabel: UILabel!
+	@IBOutlet weak var cityInfoLabel: UILabel!
+	
+		var answersChosen: [Answer]!
+		private var resultCity: City?
+		
+		override func viewDidLoad() {
+			super.viewDidLoad()
+			
+			resultCity = getResults()
+			cityLabel.text = "ВЫ - \(resultCity?.rawValue ?? "?")!"
+			cityInfoLabel.text = resultCity?.definition ?? "?"
+			
+		}
 
-        // Do any additional setup after loading the view.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+		private func getResults() -> City? {
+			var result: [City: Int] = [:]
+			
+			let cities = answersChosen.map { $0.city }
+			for index in cities {
+				result[index] = (result[index] ?? 0) + 1
+			}
+			return result.sorted { $0.value > $1.value }.first?.key
+		}
+	}
