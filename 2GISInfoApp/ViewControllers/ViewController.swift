@@ -9,16 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-	override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-	
-	
+	// To Do: переделать работу сегвеев
 
-//	@IBAction func firstPressedButton() {
-//		performSegue(withIdentifier: "TransitionMenuView", sender: nil)
-//	}
-	
 }
 
