@@ -9,8 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func startButtonPressed() {
-        performSegue(withIdentifier: "TransitionMenuView", sender: nil)
-    }
+	// To Do: переделать работу сегвеев
+ 
 }
 
