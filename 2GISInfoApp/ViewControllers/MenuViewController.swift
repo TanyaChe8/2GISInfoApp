@@ -20,9 +20,6 @@ class MenuViewController: UIViewController {
     @IBAction func faqButtonPressed() {
         performSegue(withIdentifier: "TransitionFAQ", sender: nil)
     }
-    
-    // MARK: - Navigation
-
-  
-
+	
+	@IBAction func unwind(for segue: UIStoryboardSegue) {}
 }

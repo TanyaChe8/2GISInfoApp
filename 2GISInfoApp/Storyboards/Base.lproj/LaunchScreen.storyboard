@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,18 +14,26 @@
                     <view key="view" contentMode="scaleToFill" id="hZ5-RW-7fW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1512605442_box.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UEQ-Mf-rkW">
+                                <rect key="frame" x="40" y="305" width="334" height="256"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zhN-fj-bX0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.98770490548281309" green="1" blue="0.98850355305848026" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="zhN-fj-bX0" firstAttribute="trailing" secondItem="UEQ-Mf-rkW" secondAttribute="trailing" constant="40" id="0Jf-xO-2mV"/>
+                            <constraint firstItem="UEQ-Mf-rkW" firstAttribute="leading" secondItem="zhN-fj-bX0" secondAttribute="leading" constant="40" id="TVK-yV-VkN"/>
+                            <constraint firstItem="UEQ-Mf-rkW" firstAttribute="top" secondItem="zhN-fj-bX0" secondAttribute="top" constant="261" id="dXK-uC-kUr"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CMC-uy-ZFt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2" y="499"/>
+            <point key="canvasLocation" x="-2.8985507246376816" y="498.88392857142856"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="1512605442_box.jpg" width="256" height="256"/>
     </resources>
 </document>

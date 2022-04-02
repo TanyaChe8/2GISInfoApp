@@ -13,13 +13,7 @@ class HybridViewController: UIViewController {
         performSegue(withIdentifier: "TransitionHybridInfo", sender: nil)
     }
     
-    
     @IBAction func closeScreenButton(_ sender: Any) {
         dismiss(animated: true )
     }
-    
-    // MARK: - Navigation
-
-    
-
 }
