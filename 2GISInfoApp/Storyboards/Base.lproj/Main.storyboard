@@ -158,7 +158,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pTp-Q2-LME"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99443182302268807" green="1" blue="0.92950358264883937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="dNb-br-6E7" firstAttribute="centerY" secondItem="5HW-ik-lpf" secondAttribute="centerY" id="4fD-Dg-zv6"/>
                             <constraint firstItem="OOo-hd-QFs" firstAttribute="top" secondItem="pTp-Q2-LME" secondAttribute="top" constant="20" id="FSf-aZ-35V"/>
@@ -262,7 +262,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7CZ-kP-Au8"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99443182299999999" green="1" blue="0.92950358259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Otg-5m-x1u" firstAttribute="leading" secondItem="7CZ-kP-Au8" secondAttribute="leading" constant="16" id="4F4-Sp-plD"/>
                             <constraint firstItem="Otg-5m-x1u" firstAttribute="centerY" secondItem="aIl-pF-QYr" secondAttribute="centerY" id="OnR-Ts-Het"/>
@@ -276,6 +276,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="cityInfoLabel" destination="aNJ-W9-mRl" id="HUF-lJ-F3G"/>
+                        <outlet property="cityLabel" destination="sA9-oH-S1b" id="7Y4-af-tCG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gy9-lf-byV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="UgY-78-FCD" userLabel="Exit" sceneMemberID="exit"/>
@@ -441,7 +445,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="csB-dS-FYJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99443182299999999" green="1" blue="0.92950358259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="8aQ-hU-xjw" firstAttribute="centerY" secondItem="8YY-FZ-oG2" secondAttribute="centerY" id="4eO-cB-Ls7"/>
                             <constraint firstItem="a3b-xw-Laq" firstAttribute="leading" secondItem="csB-dS-FYJ" secondAttribute="leading" constant="20" id="4nz-p4-qjH"/>
@@ -683,9 +687,6 @@
     </scenes>
     <resources>
         <image name="QR" width="408" height="410"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

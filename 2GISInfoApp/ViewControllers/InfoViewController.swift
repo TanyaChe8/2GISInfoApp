@@ -12,18 +12,18 @@ class InfoViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		infoList.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath)
+	}
+	
+	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath)
 		let infoCell = infoList[indexPath.row]
 		var content = cell.defaultContentConfiguration()
 		content.text = infoCell.header
 		cell.contentConfiguration = content
 		return cell
-    }
+	}
 	
 	// MARK: – Navigation
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -31,7 +31,7 @@ class InfoViewController: UITableViewController {
 		guard let indexPath = tableView.indexPathForSelectedRow else { return }
 		infoResultVC.helpItem = infoList[indexPath.row]
 	}
-
+	
 	@IBAction func backButtonPressed(_ sender: Any) {
 		dismiss(animated: true)
 	}
