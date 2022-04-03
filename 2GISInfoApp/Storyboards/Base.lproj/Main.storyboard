@@ -27,12 +27,21 @@
                                     <segue destination="cYC-dg-qK3" kind="presentation" id="Dze-Ha-TnF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Черненко Татьяна, Кунгурцев Эдуард" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5i3-6D-4J6">
+                                <rect key="frame" x="20" y="534.5" width="280" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.76939731840000003" green="0.32137733619999997" blue="0.2235295383" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.89436203910938994" green="1" blue="0.91180218314398698" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="SNk-FE-6LX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="01o-e6-3CE"/>
                             <constraint firstItem="SNk-FE-6LX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ED3-W3-yGo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5i3-6D-4J6" secondAttribute="bottom" constant="20" id="Ld1-ar-etH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5i3-6D-4J6" secondAttribute="trailing" constant="20" id="M3z-bu-1wL"/>
+                            <constraint firstItem="5i3-6D-4J6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QUD-Gk-BPz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oRN-wC-IHK"/>
