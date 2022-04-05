@@ -19,5 +19,7 @@ class InfoResultViewController: UIViewController {
 		helpImageView.image = UIImage(named: "InfoImage")
 		helpDescriptionLabel.text = helpItem.description
         
+
+        
     }
 }
