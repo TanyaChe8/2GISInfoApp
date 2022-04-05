@@ -18,5 +18,6 @@ class InfoResultViewController: UIViewController {
         super.viewDidLoad()
 		helpImageView.image = UIImage(named: "InfoImage")
 		helpDescriptionLabel.text = helpItem.description
+        
     }
 }
